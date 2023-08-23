@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">SATTA KHELLO</string>
+
+    <!--APIs-->
+
+    <string name="market_api">market.php</string>
+    <string name="market_list">market_list.php</string>
+    <string name="bet">bet.php</string>
+    <string name="charts">charts.php</string>
+    <string name="sangam">sangam.php</string>
+    <string name="content">content.php</string>
+    <string name="ledger">gameledger.php</string>
+    <string name="ledgers">ax_winning.php</string>
+    <string name="login">login.php</string>
+    <string name="home">home.php</string>
+    <string name="games">games.php</string>
+    <string name="profile">profile.php</string>
+    <string name="password">password.php</string>
+    <string name="rate">rate.php</string>
+    <string name="register">register.php</string>
+    <string name="transaction">transaction.php</string>
+    <string name="get_gateway">get_gateway.php</string>
+    <string name="getconfig">get_config.php</string>
+    <string name="withdraw_modes">withdraw_modes.php</string>
+    <string name="withdraw_request">withdraw_request.php</string>
+    <string name="market_list_starline">market_list_starline.php</string>
+    <string name="starline_timings">starline_timings.php</string>
+
+    <string name="delhi_markets">delhi_markets.php</string>
+    <string name="reset_pin">reset_pin.php</string>
+    <string name="ax_validpin">ax_validpin.php</string>
+    <string name="resend_otp">Re-send code ?</string>
+
+    <string name="gpay">com.google.android.apps.nbu.paisa.user</string>
+    <string name="paytm">net.one97.paytm</string>
+    <string name="phonepe">com.phonepe.app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="sign_up_string">Sign up</string>
+    <string name="enter_your_personal_details_to_continue_string">Enter your personal details to continue</string>
+    <string name="enter_mobile_number_string">Enter mobile number</string>
+    <string name="enter_name_string">Enter Name</string>
+    <string name="enter_emailid_string">Enter EmailId</string>
+    <string name="enter_password_string">Enter Password</string>
+    <string name="enter_pin_string">Enter Pin</string>
+    <string name="enter_referral_code_string">Enter Referral Code</string>
+    <string name="submit_string">SUBMIT</string>
+    <string name="title_activity_single_bet">SingleBet</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="play_jodi">Play Jodi</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+</resources>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rate">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/md_pink_A400"
+            android:background="@drawable/grad_button">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:src="@drawable/back"
+                    app:tint="@color/md_white_1000" />
+
+
+                <com.sattakhelo.mtk.latobold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Game Rate"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/toolbar"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edittext23"
+                    android:layout_marginBottom="10dp"
+                    android:padding="0dp"
+                    android:layout_height="40dp">
+
+                    <com.sattakhelo.mtk.latonormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Single"
+                        android:textColor="@color/black"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+                    <com.sattakhelo.mtk.latonormal
+                        android:id="@+id/single"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:background="@drawable/white_button_round"
+                        android:textColor="@color/white"
+                        android:text="Loading"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edittext23"
+                    android:padding="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="40dp">
+
+                    <com.sattakhelo.mtk.latonormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Jodi"
+                        android:textColor="@color/black"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+                    <com.sattakhelo.mtk.latonormal
+                        android:id="@+id/doublegame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Loading"
+                        android:background="@drawable/white_button_round"
+                        android:textColor="@color/white"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edittext23"
+                    android:padding="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="40dp">
+
+                    <com.sattakhelo.mtk.latonormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Single Panna"
+                        android:textColor="@color/black"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+                    <com.sattakhelo.mtk.latonormal
+                        android:id="@+id/singlepatti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Loading"
+                        android:background="@drawable/white_button_round"
+                        android:textColor="@color/white"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edittext23"
+                    android:padding="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="40dp">
+
+                    <com.sattakhelo.mtk.latonormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Double Panna"
+                        android:textColor="@color/black"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+                    <com.sattakhelo.mtk.latonormal
+                        android:id="@+id/doublepatti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Loading"
+                        android:background="@drawable/white_button_round"
+                        android:textColor="@color/white"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edittext23"
+                    android:layout_marginBottom="10dp"
+                    android:padding="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="40dp">
+
+                    <com.sattakhelo.mtk.latonormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Triple Panna"
+                        android:textColor="@color/black"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+                    <com.sattakhelo.mtk.latonormal
+                        android:id="@+id/tripepatti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Loading"
+                        android:background="@drawable/white_button_round"
+                        android:textColor="@color/white"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edittext23"
+                    android:padding="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="40dp">
+
+                    <com.sattakhelo.mtk.latonormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Half Sangam"
+                        android:textColor="@color/black"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+                    <com.sattakhelo.mtk.latonormal
+                        android:id="@+id/halfsangam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Loading"
+                        android:background="@drawable/white_button_round"
+                        android:textColor="@color/white"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="0dp"
+                    android:background="@drawable/edittext23"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="40dp">
+
+                    <com.sattakhelo.mtk.latonormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Full Sangam"
+                        android:textColor="@color/black"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+                    <com.sattakhelo.mtk.latonormal
+                        android:id="@+id/fullsangam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Loading"
+                        android:background="@drawable/white_button_round"
+                        android:textColor="@color/white"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

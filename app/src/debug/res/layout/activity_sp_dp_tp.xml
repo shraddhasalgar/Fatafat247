@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SpDpTp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar"
+                android:backgroundTint="@color/md_pink_A400"
+                android:background="@drawable/grad_button"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:padding="9dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/back"
+                            android:id="@+id/back"
+                            app:tint="@color/md_white_1000" />
+
+
+
+                        <com.sattakhelo.mtk.latobold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/md_white_1000"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:id="@+id/title"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="Place bet"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/wallet_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/wallet_out"
+                        android:padding="8dp">
+
+                        <com.sattakhelo.mtk.latobold
+                            android:id="@+id/balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/accent"
+                            android:visibility="gone"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/coin"
+                            android:layout_width="21dp"
+                            android:layout_height="21dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/wallet_icon"
+                            app:tint="@color/md_black_1000" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:background="#730800"
+                            android:backgroundTint="#F50057"
+                            android:padding="3dp">
+
+                            <com.sattakhelo.mtk.latobold
+                                android:id="@+id/date"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:padding="15dp"
+                                android:visibility="gone"
+                                android:backgroundTint="#F50057"
+                                android:background="#730800"
+                                android:text="DEC, 12 2021"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+
+                                />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/type_container"
+                                android:layout_weight="6"
+                                android:backgroundTint="#A19C27B0"
+
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <com.sattakhelo.mtk.latobold
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/open_game"
+                                    android:background="@color/green"
+                                    android:textColor="@color/white"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="OPEN"
+                                    />
+
+                                <com.sattakhelo.mtk.latobold
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/close_game"
+                                    android:background="@color/white"
+                                    android:gravity="center"
+                                    android:textColor="@color/font"
+                                    android:padding="10dp"
+                                    android:text="CLOSE"
+
+                                    />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <Spinner
+                            android:id="@+id/type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/edittext"
+                            android:padding="5dp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <com.sattakhelo.mtk.latobold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="Bid Digits"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+
+                                <EditText
+                                    android:id="@+id/number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:background="@drawable/edittext2"
+                                    android:completionThreshold="0"
+                                    android:hint="Enter Digit"
+                                    android:inputType="number"
+
+                                    android:textColor="@color/md_black_1000"
+                                    android:textColorHint="@color/md_black_1000"
+                                    android:textSize="13sp"
+                                    tools:ignore="TouchTargetSizeCheck" />
+
+                                <LinearLayout
+                                    android:id="@+id/number3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:visibility="gone"
+                                    android:layout_marginRight="20dp"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp">
+
+
+                                            <com.sattakhelo.mtk.latobold
+                                                android:layout_width="50dp"
+                                                android:layout_height="match_parent"
+                                                android:background="@drawable/shadow"
+                                                android:gravity="center"
+                                                android:text="0"
+                                                android:id="@+id/dp0"
+                                                android:textColor="@color/font"
+                                                android:textSize="16sp" />
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+
+                                            android:layout_marginLeft="10dp">
+
+
+                                            <com.sattakhelo.mtk.latobold
+                                                android:layout_width="50dp"
+                                                android:layout_height="match_parent"
+                                                android:background="@drawable/shadow"
+                                                android:gravity="center"
+                                                android:text="1"
+                                                android:id="@+id/dp1"
+                                                android:textColor="@color/font"
+                                                android:textSize="16sp" />
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+
+                                            android:layout_marginLeft="10dp">
+
+
+                                            <com.sattakhelo.mtk.latobold
+                                                android:layout_width="50dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerHorizontal="true"
+                                                android:background="@drawable/shadow"
+                                                android:gravity="center"
+                                                android:text="2"
+                                                android:id="@+id/dp2"
+                                                android:textColor="@color/font"
+                                                android:textSize="16sp" />
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+
+                                            android:layout_marginLeft="10dp">
+
+
+                                            <com.sattakhelo.mtk.latobold
+                                                android:layout_width="50dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/shadow"
+                                                android:gravity="center"
+                                                android:text="3"
+                                                android:id="@+id/dp3"
+                                                android:textColor="@color/font"
+                                                android:textSize="16sp" />
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_marginLeft="10dp">
+
+
+                                            <com.sattakhelo.mtk.latobold
+                                                android:id="@+id/dp4"
+                                                android:layout_width="50dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/shadow"
+                                                android:gravity="center"
+                                                android:text="4"
+                                                android:textColor="@color/font"
+                                                android:textSize="16sp" />
+
+                                        </RelativeLayout>
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:padding="5dp">
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+
+                                            >
+
+
+                                            <com.sattakhelo.mtk.latobold
+                                                android:layout_width="50dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/shadow"
+                                                android:gravity="center"
+                                                android:text="5"
+                                                android:id="@+id/dp5"
+                                                android:textColor="@color/font"
+                                                android:textSize="16sp" />
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+
+                                            android:layout_marginLeft="10dp">
+
+
+                                            <com.sattakhelo.mtk.latobold
+                                                android:layout_width="50dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/shadow"
+                                                android:gravity="center"
+                                                android:text="6"
+                                                android:id="@+id/dp6"
+                                                android:textColor="@color/font"
+                                                android:textSize="16sp" />
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+
+                                            android:layout_marginLeft="10dp">
+
+
+                                            <com.sattakhelo.mtk.latobold
+                                                android:layout_width="50dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/shadow"
+                                                android:gravity="center"
+                                                android:text="7"
+                                                android:id="@+id/dp7"
+                                                android:textColor="@color/font"
+                                                android:textSize="16sp" />
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+
+                                            android:layout_marginLeft="10dp">
+
+
+                                            <com.sattakhelo.mtk.latobold
+                                                android:id="@+id/dp8"
+                                                android:layout_width="50dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/shadow"
+                                                android:gravity="center"
+                                                android:text="8"
+                                                android:textColor="@color/font"
+                                                android:textSize="16sp" />
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_marginLeft="10dp">
+
+
+                                            <com.sattakhelo.mtk.latobold
+                                                android:id="@+id/dp9"
+                                                android:layout_width="50dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_centerInParent="true"
+                                                android:background="@drawable/shadow"
+                                                android:gravity="center"
+                                                android:text="9"
+                                                android:textColor="@color/font"
+                                                android:textSize="16sp" />
+
+                                        </RelativeLayout>
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18dp"
+                                    android:id="@+id/spdptp_panel"
+                                    android:layout_marginRight="18dp"
+                                    android:layout_marginTop="20dp"
+                                    android:padding="10dp">
+
+                                    <com.sattakhelo.mtk.latobold
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:textColor="@color/black"
+                                        android:gravity="center"
+                                        android:padding="10dp"
+                                        android:backgroundTint="@color/pale_valendor"
+                                        android:text="Single Pana"
+                                        android:id="@+id/single_panna"
+                                        android:layout_marginRight="5dp"
+                                        />
+
+                                    <com.sattakhelo.mtk.latobold
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/double_panna"
+                                        android:backgroundTint="@color/diamond"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:textColor="@color/black"
+                                        android:padding="10dp"
+                                        android:text="Double Pana"
+
+                                        />
+
+                                    <com.sattakhelo.mtk.latobold
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/triple_panna"
+                                        android:background="@color/white"
+                                        android:backgroundTint="@color/khaki"
+                                        android:gravity="center"
+                                        android:textColor="@color/black"
+                                        android:padding="10dp"
+                                        android:text="Triple Pana"
+
+                                        />
+
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/sample_recycler"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="30dp"
+                                    />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <com.sattakhelo.mtk.latobold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="Bid Points"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <EditText
+                                    android:id="@+id/amount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:background="@drawable/edittext2"
+                                    android:hint="Enter Amount"
+                                    android:inputType="number"
+                                    android:textColor="@color/black"
+
+                                    android:textColorHint="@color/md_black_1000"
+                                    android:textSize="13sp"
+                                    tools:ignore="TouchTargetSizeCheck" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:visibility="gone"
+                                    android:gravity="center"
+                                    android:padding="5dp">
+
+                                    <Button
+                                        android:id="@+id/button10"
+                                        android:layout_width="70dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginRight="15dp"
+                                        android:background="@drawable/homeb"
+                                        android:backgroundTint="#E91E63"
+                                        android:paddingStart="10dp"
+                                        android:paddingEnd="10dp"
+                                        android:text="10"
+                                        android:layout_marginLeft="20dp"
+                                        android:textColor="@android:color/background_light"
+                                        android:textSize="18sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <Button
+                                        android:id="@+id/button50"
+                                        android:layout_width="70dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginRight="15dp"
+                                        android:background="@drawable/homeb"
+                                        android:backgroundTint="#E91E63"
+                                        android:paddingStart="10dp"
+                                        android:paddingEnd="10dp"
+                                        android:text="50"
+                                        android:textColor="@android:color/background_light"
+                                        android:textSize="18sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                                    <Button
+                                        android:id="@+id/button100"
+                                        android:layout_width="70dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginRight="15dp"
+                                        android:background="@drawable/homeb"
+                                        android:backgroundTint="#E91E63"
+                                        android:paddingStart="10dp"
+                                        android:paddingEnd="10dp"
+                                        android:text="100"
+                                        android:textColor="@android:color/background_light"
+                                        android:textSize="18sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <Button
+                                        android:id="@+id/button1000"
+                                        android:layout_width="70dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginRight="30dp"
+                                        android:background="@drawable/homeb"
+                                        android:backgroundTint="#E91E63"
+                                        android:paddingStart="10dp"
+                                        android:paddingEnd="10dp"
+                                        android:text="1000"
+                                        android:textColor="@android:color/background_light"
+                                        android:textSize="18sp"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <com.sattakhelo.mtk.latobold
+                            android:id="@+id/add"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="40sp"
+                            android:layout_marginRight="80dp"
+                            android:background="@drawable/login_button"
+                            android:backgroundTint="#F50057"
+                            android:gravity="center_horizontal"
+                            android:text="ADD BID"
+                            android:textColor="@color/md_white_1000" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="20dp"
+                        android:visibility="gone"
+                        android:background="#23000000" />
+
+
+                    <!--          <androidx.cardview.widget.CardView-->
+                    <!--              android:layout_width="match_parent"-->
+                    <!--              android:layout_height="wrap_content"-->
+                    <!--              android:layout_margin="15dp"-->
+                    <!--              app:cardCornerRadius="5dp"-->
+                    <!--              app:cardElevation="5dp">-->
+
+                    <!--            <LinearLayout-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:orientation="vertical">-->
+
+
+                    <!--              <LinearLayout-->
+                    <!--                  android:layout_width="match_parent"-->
+                    <!--                  android:layout_height="wrap_content"-->
+                    <!--                  android:orientation="horizontal"-->
+                    <!--                  android:weightSum="4">-->
+
+                    <!--                <com.betplay.android.latonormal-->
+                    <!--                    android:layout_width="0dp"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_weight="1"-->
+                    <!--                    android:gravity="center"-->
+                    <!--                    android:padding="10dp"-->
+                    <!--                    android:text="Digit"-->
+                    <!--                    android:textColor="@color/font" />-->
+
+                    <!--                <View-->
+                    <!--                    android:layout_width="1dp"-->
+                    <!--                    android:layout_height="match_parent" />-->
+
+                    <!--                <com.betplay.android.latonormal-->
+                    <!--                    android:layout_width="0dp"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_weight="1"-->
+                    <!--                    android:gravity="center"-->
+                    <!--                    android:padding="10dp"-->
+                    <!--                    android:text="Amount"-->
+                    <!--                    android:textColor="@color/font" />-->
+
+                    <!--                <View-->
+                    <!--                    android:layout_width="1dp"-->
+                    <!--                    android:layout_height="match_parent" />-->
+
+
+                    <!--                <com.betplay.android.latonormal-->
+                    <!--                    android:layout_width="0dp"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_weight="2"-->
+                    <!--                    android:gravity="center"-->
+                    <!--                    android:padding="10dp"-->
+                    <!--                    android:text="Game type"-->
+                    <!--                    android:textColor="@color/font" />-->
+
+                    <!--              </LinearLayout>-->
+
+                    <!--              <View-->
+                    <!--                  android:layout_width="match_parent"-->
+                    <!--                  android:layout_height="1dp"-->
+                    <!--                  android:background="#31000000" />-->
+
+                    <!--              <androidx.recyclerview.widget.RecyclerView-->
+                    <!--                  android:id="@+id/recyclerview"-->
+                    <!--                  android:layout_width="match_parent"-->
+                    <!--                  android:layout_height="wrap_content"-->
+                    <!--                  android:minHeight="100dp"-->
+                    <!--                  android:nestedScrollingEnabled="true" />-->
+
+
+                    <!--            </LinearLayout>-->
+
+                    <!--          </androidx.cardview.widget.CardView>-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:id="@+id/digit_header"
+                        android:layout_marginTop="5dp"
+                        android:weightSum="4">
+
+                        <com.sattakhelo.mtk.latonormal
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Digit"
+                            android:textColor="@color/white" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent" />
+
+                        <com.sattakhelo.mtk.latonormal
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Amount"
+                            android:textColor="@color/white" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent" />
+
+
+                        <com.sattakhelo.mtk.latonormal
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Game type"
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:nestedScrollingEnabled="true" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:gravity="end"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="10dp">
+
+                        <com.sattakhelo.mtk.latonormal
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="5dp"
+                            android:text="Total"
+                            android:textColor="@color/font"
+                            android:textSize="22sp" />
+
+                        <EditText
+                            android:id="@+id/totalamount"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/edittext"
+                            android:focusable="false"
+                            android:hint=""
+                            android:inputType="number"
+                            android:textSize="13sp" />
+
+
+                    </LinearLayout>
+
+                    <com.sattakhelo.mtk.latobold
+                        android:id="@+id/submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#730800"
+                        android:backgroundTint="#F50057"
+                        android:padding="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="Submit"
+                        android:textColor="@color/white"/>
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

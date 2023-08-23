@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Wallet">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grad_button"
+            android:backgroundTint="@color/md_pink_A400">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="15dp"
+                    android:padding="5dp"
+                    android:src="@drawable/back"
+                    app:tint="@color/md_white_1000" />
+
+
+                <com.sattakhelo.mtk.latobold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="My Wallet"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <com.sattakhelo.mtk.latobold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="Wallet Balance"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="22sp"
+                        android:visibility="gone" />
+
+                    <com.sattakhelo.mtk.latobold
+                        android:id="@+id/amount"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/eclips"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="-"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/add_money_new" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/withdraw_money_new" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="110dp"
+                                android:layout_height="110dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/bid_history_new" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:backgroundTint="#efbbcc"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:id="@+id/deposit"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                >
+
+                                <ImageView
+                                    android:layout_width="64dp"
+                                    android:layout_height="64dp"
+                                    android:layout_marginTop="8dp"
+                                    android:background="@drawable/circle_shape"
+                                    android:backgroundTint="#ff1493"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/add_icon"
+                                    app:tint="#c21e56" />
+
+                                <com.sattakhelo.mtk.latobold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:text="Add Funds"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/md_black_1000"
+                                    android:textFontWeight="600"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:backgroundTint="#f0e68c"
+                            android:layout_marginStart="50dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:id="@+id/withdraw"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                >
+
+                                <ImageView
+                                    android:layout_width="64dp"
+                                    android:layout_height="64dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/circle_shape"
+                                    android:backgroundTint="#ffa500"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/withdraw11"
+                                    app:tint="#ff6700" />
+
+                                <com.sattakhelo.mtk.latobold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:text="Withdraw Funds"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/md_black_1000"
+                                    android:textFontWeight="600"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:backgroundTint="#dcd0ff"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:id="@+id/bid_history"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                >
+
+                                <ImageView
+                                    android:layout_width="64dp"
+                                    android:layout_height="64dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/circle_shape"
+                                    android:backgroundTint="#bf00ff"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/bid"
+                                    app:tint="#9f00c5"/>
+
+                                <com.sattakhelo.mtk.latobold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:text="Bid History"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/md_black_1000"
+                                    android:textFontWeight="600"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:backgroundTint="#b9f2ff"
+                            android:layout_marginStart="50dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:id="@+id/winning_history"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                >
+
+                                <ImageView
+                                    android:layout_width="64dp"
+                                    android:layout_height="64dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/circle_shape"
+                                    android:backgroundTint="#6495ed"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/winning"
+                                    app:tint="#dc143c" />
+
+                                <com.sattakhelo.mtk.latobold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:text="Winning History"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/md_black_1000"
+                                    android:textFontWeight="600"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:backgroundTint="#98fb98"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:id="@+id/transaction_history"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                >
+
+                                <ImageView
+                                    android:layout_width="64dp"
+                                    android:layout_height="64dp"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/circle_shape"
+                                    android:backgroundTint="#3cd070"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/transaction"
+                                    app:tint="#006400" />
+
+                                <com.sattakhelo.mtk.latobold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    android:text="Transaction\n    History"
+                                    android:textColor="@color/md_black_1000"
+                                    android:textFontWeight="600"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/grad_button"
+                    android:visibility="gone"
+                    app:tabSelectedTextColor="@color/primary_dark"
+                    app:tabTextColor="@color/font">
+
+
+                </com.google.android.material.tabs.TabLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

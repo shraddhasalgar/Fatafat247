@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".games">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/md_pink_A400"
+            android:background="@drawable/grad_button">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/back"
+                    app:tint="@color/md_white_1000" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <com.sattakhelo.mtk.latobold
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="-"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="14sp" />
+
+                    <com.sattakhelo.mtk.latobold
+                        android:id="@+id/timing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="-"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/white_button"
+                    android:backgroundTint="#F50057"
+
+                    android:layout_height="wrap_content">
+
+                    <com.sattakhelo.mtk.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="BID OF DIGIT"
+                        android:textColor="@color/md_white_1000"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/single"
+                        android:layout_width="20dp"
+                        android:padding="5dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/shadow"
+                        android:layout_weight="1"
+                        android:backgroundTint="#b9f2ff"
+                        android:src="@drawable/ic_singledigits"
+
+
+                        />
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="140dp"
+                        android:layout_weight="1"
+                        android:id="@+id/odd_even"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:backgroundTint="#cb4154"
+                        android:background="@drawable/shadow"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_oddeven" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/jodi"
+                        android:layout_width="0dp"
+                        android:padding="5dp"
+                        android:layout_height="140dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="#98fb98"
+                        android:background="@drawable/shadow"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_jodidigits" />
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/shadow"
+                        android:padding="5dp"
+                        android:backgroundTint="#dcd0ff"
+                        android:id="@+id/red_bracket"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_redbracket" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/white_button"
+                    android:backgroundTint="#F50057"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+
+                    <com.sattakhelo.mtk.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="BID OF PANNA"
+                        android:textColor="@color/md_white_1000"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/singlepatti"
+                        android:layout_width="0dp"
+                        android:padding="5dp"
+                        android:layout_height="140dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="#f4bbff"
+                        android:background="@drawable/shadow"
+                        android:src="@drawable/ic_singlepana"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/doublepatti"
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/shadow"
+                        android:layout_weight="1"
+                        android:backgroundTint="#b9f2ff"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_doublepana" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/tripepatti"
+                        android:layout_width="0dp"
+                        android:padding="5dp"
+                        android:layout_height="140dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="#cb4154"
+                        android:background="@drawable/shadow"
+                        android:src="@drawable/ic_triplepana" />
+
+
+                    <ImageView
+                        android:id="@+id/spdptp"
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/shadow"
+                        android:padding="5dp"
+                        android:backgroundTint="#98fb98"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_spdptp" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/white_button"
+                    android:backgroundTint="#F50057"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+
+                    <com.sattakhelo.mtk.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+
+                        android:padding="10dp"
+                        android:text="BID OF SANGAM"
+                        android:textColor="@color/md_white_1000"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/halfsangam"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/shadow"
+                        android:layout_height="140dp"
+                        android:padding="5dp"
+                        android:backgroundTint="#f4bbff"
+                        android:layout_weight="1"
+
+                        android:src="@drawable/ic_halfsangam" />
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/fullsangam"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:backgroundTint="#dcd0ff"
+                        android:background="@drawable/shadow"
+                        android:src="@drawable/ic_fullsangam" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/white_button"
+                    android:backgroundTint="#F50057"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+
+                    <com.sattakhelo.mtk.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+
+                        android:text="BID OF MOTOR"
+                        android:textColor="@color/md_white_1000"
+                        android:textFontWeight="600"
+                        android:textSize="12sp" />
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingBottom="20dp">
+
+
+                    <ImageView
+                        android:id="@+id/sp_motor"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="140dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#efbbcc"
+                        android:background="@drawable/shadow"
+                        android:src="@drawable/sp_motor1" />
+
+
+                    <ImageView
+                        android:id="@+id/dp_motor"
+                        android:layout_width="0dp"
+                        android:layout_height="140dp"
+                        android:padding="15dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:backgroundTint="#f0e68c"
+                        android:background="@drawable/shadow"
+                        android:src="@drawable/dp_motor1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>
+
+

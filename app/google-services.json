@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "600919648350",
+    "project_id": "satta-khelo-4d8b4",
+    "storage_bucket": "satta-khelo-4d8b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600919648350:android:857480e96239e2d382eccf",
+        "android_client_info": {
+          "package_name": "com.sattakhelo.mtk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "600919648350-gtlhaoe96s0og1vciq6luvvnq11t8d5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDywoABJtRlaS5VnNgVRiNVApj_9Y1Y814"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "600919648350-gtlhaoe96s0og1vciq6luvvnq11t8d5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

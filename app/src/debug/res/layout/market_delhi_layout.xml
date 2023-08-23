@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rectangle_2_shape"
+        android:backgroundTint="@color/white"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.sattakhelo.mtk.latobold
+                    android:id="@+id/market_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#A10606"
+                    android:backgroundTint="#F50057"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="10:00 AM"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/chart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+
+                    android:src="@drawable/calendar"
+                    app:tint="@color/md_white_1000" />
+
+
+            </RelativeLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/layout"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <com.sattakhelo.mtk.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="10:00 AM"
+                        android:lines="1"
+                        android:id="@+id/name"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        />
+
+                    <com.sattakhelo.mtk.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="XX:XX"
+                        android:id="@+id/result"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <com.sattakhelo.mtk.latobold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="10:00 AM"
+                        android:lines="1"
+                        android:id="@+id/status"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        />
+
+                    <cn.iwgang.countdownview.CountdownView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/timer"
+                        android:layout_height="wrap_content"
+                        app:isHideTimeBackground="true"
+                        app:isShowMinute="true"
+                        android:layout_marginTop="5dp"
+                        app:isShowSecond="true"
+                        app:timeTextColor="@color/black"
+                        app:timeTextSize="14sp"
+                        app:isTimeTextBold="true"
+                        app:suffixGravity="bottom"
+                        app:suffixTextColor="@color/black"
+                        app:suffixTextSize="12sp"
+                        app:suffixMinute=":"
+                        app:isShowHour="true"
+                        app:suffixHour=":"
+                        app:suffixSecond="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/play_game"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/play_button"
+                        android:backgroundTint="@color/black"
+                        />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

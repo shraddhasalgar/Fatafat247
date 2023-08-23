@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="a2">#0096a9</color>
+    <color name="font">#000</color>
+    <color name="lightfont">#C9262933</color>
+    <color name="back">#5BD8E4EA</color>
+    <color name="gray">#D8E4EA</color>
+    <color name="ultralight">#2C000000</color>
+    <color name="green">#00930E</color>
+    <color name="orange">#9B170D</color>
+    <color name="custome">#8D0634</color>
+    <color name="background">#03F4D8</color>
+    <color name="accent">#ffff</color>
+    <color name="buttons1">#A19C27B0</color>
+    <color name="bb">#E0E4463A</color>
+    <color name="colorPrimaryZ">#0096a9</color>
+    <color name="colorPrimaryDarkZ">#0096a9</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="_bg__sign_up_screen_ek2_color">#000000</color>
+    <color name="rectangle_1_color">#ffffff</color>
+    <color name="rectangle_2_color">#FFFFFF</color>
+    <color name="sign_up_color">#B90000</color>
+    <color name="enter_your_personal_details_to_continue_color">#E36016</color>
+    <color name="rectangle_3_color">#E6E6E6</color>
+    <color name="secondaryColor">#e65100</color>
+    <color name="secondaryLightColor">#ff833a</color>
+    <color name="secondaryDarkColor">#ac1900</color>
+    <color name="primaryTextColor">#424242</color>
+    <color name="secondaryTextColor">#fff3e0</color>
+    <color name="primaryLightColor">#ffffff</color>
+    <color name="pink">#AE2456</color>
+
+    <color name="colorPinkDarkcolorPinkDark">#E91E63</color>
+    <color name="colorPinkLight">#F06898</color>
+
+    <color name="fc_background_tnc_tag">#fffa110e</color>
+
+    <color name="global_color_brown_accent">#ffc107</color>
+
+    <color name="md_amber_200">#FFE082</color>
+    <color name="md_pink_A400">#F50057</color>
+
+    <color name="md_pink_500">#E91E63</color>
+
+    <color name="cameo_pink">#efbbcc</color>
+    <color name="fluorescent_pink">#ff1493</color>
+    <color name="rose_red">#c21e56</color>
+
+
+
+    <color name="khaki">#f0e68c</color>
+    <color name="oranges">#ffa500</color>
+    <color name="safety_orange">#ff6700</color>
+
+
+    <color name="diamond">#b9f2ff</color>
+    <color name="corn_flower_blue">#6495ed</color>
+    <color name="crimson">#dc143c</color>
+
+    <color name="pale_valendor">#dcd0ff</color>
+    <color name="electric_purple">#bf00ff</color>
+    <color name="purple">#9f00c5</color>
+
+    <color name="plae_green">#98fb98</color>
+    <color name="ufo_green">#3cd070</color>
+    <color name="dark_green">#006400</color>
+
+    <color name="brick_red">#cb4154</color>
+
+    <color name="electric_lavender">#f4bbff</color>
+
+
+
+
+
+
+
+</resources>

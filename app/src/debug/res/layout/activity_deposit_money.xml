@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deposit_money">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/md_pink_A400"
+            android:background="@drawable/grad_button">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="15dp"
+                    android:padding="5dp"
+                    android:src="@drawable/back"
+                    app:tint="@color/md_white_1000" />
+
+
+                <com.sattakhelo.mtk.latobold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="Deposit Coins"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.sattakhelo.mtk.latobold
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/white_button"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:padding="10dp"
+                        android:text="Balance"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="21sp" />
+
+
+                    <com.sattakhelo.mtk.latobold
+                        android:id="@+id/wallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/white_button"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        android:text="0"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="21sp" />
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/amount"
+                    android:padding="15dp"
+                    android:hint="Enter Amount to add"
+                    android:inputType="number"
+                    android:background="@drawable/rectangle_3_shape"
+                    android:textSize="16sp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/md_white_1000"
+                        android:id="@+id/gpay_icon"
+                        android:background="@drawable/white_button_round"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/googlepay" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <com.sattakhelo.mtk.latobold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Google Pay"
+                                android:textColor="@color/md_black_1000"
+                                />
+
+                            <com.sattakhelo.mtk.latobold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Auto approve"
+                                android:textColor="@color/md_black_1000"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/md_white_1000"
+                        android:id="@+id/phonepe_icon"
+                        android:background="@drawable/white_button_round"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/phone_pe" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <com.sattakhelo.mtk.latobold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Phone Pe"
+                                android:textColor="@color/md_black_1000"
+                                />
+
+                            <com.sattakhelo.mtk.latobold
+                                android:layout_width="wrap_content"
+                                android:textColor="@color/md_black_1000"
+                                android:layout_height="wrap_content"
+                                android:text="Auto approve"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:backgroundTint="@color/md_white_1000"
+                        android:id="@+id/paytm_icon"
+                        android:background="@drawable/white_button_round"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/paytm"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="10dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <com.sattakhelo.mtk.latobold
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Paytm"
+                                android:textColor="@color/md_black_1000"
+                                />
+
+                            <com.sattakhelo.mtk.latobold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Manual approve by admin"
+                                android:textColor="@color/md_black_1000"
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:visibility="gone"
+                   android:layout_height="wrap_content">
+
+                   <lib.kingja.switchbutton.SwitchMultiButton
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:padding="12dp"
+                       android:id="@+id/switchmultibutton"
+                       android:layout_marginTop="15dp"
+                       android:visibility="gone"
+                       app:strokeRadius="5dp"
+                       app:strokeWidth="1dp"
+                       app:selectedTab="0"
+                       app:selectedColor="@color/accent"
+                       app:textSize="16sp" />
+
+               </RelativeLayout>
+
+                <com.sattakhelo.mtk.latobold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Proceed to Payment"
+                    android:background="@drawable/button"
+                    android:id="@+id/submit"
+                    android:textColor="#fff"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="16sp"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_btn"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:id="@+id/whatsapp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/whatsapp"
+            />
+
+        <com.sattakhelo.mtk.latobold
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:text="Direct Deposit"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/font"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

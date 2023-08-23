@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_marginBottom="10dp"
+
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="12"
+        android:padding="15dp"
+        android:background="@drawable/rectangle_2_shape"
+        android:backgroundTint="@color/black"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            >
+
+            <com.sattakhelo.mtk.latobold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 Nov 2019"
+                android:id="@+id/date"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                />
+
+            <com.sattakhelo.mtk.latonormal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kalyan Open"
+                android:id="@+id/bazar"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            >
+
+            <com.sattakhelo.mtk.latobold
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:text="Bet"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                />
+
+
+            <com.sattakhelo.mtk.latonormal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0 - 2000 "
+                android:layout_marginTop="3dp"
+                android:id="@+id/bet"
+                android:textColor="@color/white"
+                 android:textSize="12sp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            >
+
+            <com.sattakhelo.mtk.latobold
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:text="Coin"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                />
+
+            <com.sattakhelo.mtk.latonormal
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:id="@+id/amount"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="10000 📀"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
