@@ -71,6 +71,14 @@ class adapter_result extends RecyclerView.Adapter<adapter_result.ViewHolder> {
         } else {
             holder.play_game.setVisibility(View.GONE);
         }
+//  add background colour
+        if (name18.get(position).equals("MAIN BAZAR") || name18.get(position).equals("KALYAN")) {
+            holder.layout.setBackgroundColor(context.getResources().getColor(R.color.global_color_brown_accent));
+        } else {
+            holder.layout.setBackgroundColor(context.getResources().getColor(android.R.color.transparent));
+        }
+
+
         holder.chart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

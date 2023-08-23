@@ -25,7 +25,7 @@
             android:gravity="center"
             android:id="@+id/date"
             android:padding="10dp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             />
 
         <View
@@ -41,7 +41,7 @@
             android:padding="10dp"
             android:gravity="center"
             android:id="@+id/amount"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             />
 
         <View
@@ -62,7 +62,7 @@
                 android:text="Game played"
                 android:id="@+id/remark"
                 android:padding="10dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 />
 
             <ImageView
